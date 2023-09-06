@@ -54,7 +54,8 @@ import matplotlib.pyplot as plt
 import cv2 as cv
 ```
 ```
-#plotting of an image :
+plotting of an image :
+
 image = cv.imread("tree.jpg")
 image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
 
@@ -62,7 +63,8 @@ plt.axis("off")
 plt.imshow(image)
 plt.show()
 
-#translation of an image :
+translation of an image :
+
 rows,cols,dim = image.shape
 
 M = np.float32([[1,0,100], [0,1,50],[0,0,1]])
@@ -143,6 +145,7 @@ plt.show()
 
 ```
 ## Output:
+
 ### i)Image Translation
 ![Screenshot from 2023-09-06 19-13-07](https://github.com/Dhanudhanaraj/IMAGETRANSFORMATION/assets/119218812/6ece8d91-357d-44ea-b2d1-b89efeabb820)
 
@@ -152,7 +155,8 @@ plt.show()
 
 
 ### iii)Image shearing
-![Screenshot from 2023-09-06 19-13-41](https://github.com/Dhanudhanaraj/IMAGETRANSFORMATION/assets/119218812/79252871-7a6f-40f7-83b3-b1b5d159eec2)
+
+![Screenshot from 2023-09-06 19-13-33](https://github.com/Dhanudhanaraj/IMAGETRANSFORMATION/assets/119218812/88093ae6-c3c6-4d2d-9c8f-812494e40ce2)
 
 
 ### iv)Image Reflection
